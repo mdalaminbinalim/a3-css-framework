@@ -16,6 +16,9 @@
                         basic: '#ABEF5F',
                         subhead: '#494949',
                         text: '#737373',
+                    },
+                    backgroundImage: {
+                        'form-bg': "url('assets/bg.jpg')",
                     }
                 }
             }
@@ -241,7 +244,7 @@
             <div class="text-center space-y-5">
                 <button class="hover:bg-[#acef5fca] py-2 px-4 bg-[#cceca7] border-2 border-[#acef5f] rounded-full font-[800]">
                     <i class="mr-2 fa-solid fa-arrow-right"></i>
-                    <p class="inline">Explore Our Lates Works</p>
+                    <p class="inline">Explore Our Latest Works</p>
                 </button>
                 <h2 class="text-2xl md:text-4xl font-extrabold">Our Latest Portfolio</h2>
                 <p class="text-subhead md:w-1/2 mx-auto text-subhead">Although we have accomplished over 50 projects which have good reviews from our clients, here are some of the latest ones</p>
@@ -401,6 +404,13 @@
                             <p>Typically, it is better to book your order at least 4-6 months before you want the final layout.</p>
                         </div>
                     </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-bold">Is the payment refundable if I change my decision?</div>
+                        <div class="collapse-content">
+                            <p>Although we return a significant portion of the payment if our client don't want the design, we keep 20% of the full amount as service charge.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -411,7 +421,34 @@
     <!-- Footer Section -->
 
     <footer>
+        <!-- Next Project Section -->
 
+        <section class=" px-4 mt-12 md:mt-24 bg-form-bg bg-no-repeat bg-cover">
+
+            <!-- Next Project Contents -->
+            <div class="max-w-5xl mx-auto py-12 md:py-20">
+                <div class=" text-center space-y-5">
+                    <button class="hover:bg-[#acef5fca] py-2 px-4 bg-[#cceca7] border-2 border-[#acef5f] rounded-full font-[800]">
+                        <i class="mr-2 fa-solid fa-arrow-right"></i>
+                        <p class="inline">Let's Connect</p>
+                    </button>
+                    <h2 class="text-2xl md:text-4xl font-extrabold">Let's Discuss Next Project</h2>
+                    <p class="text-subhead md:w-3/4 mx-auto text-subhead">What are you waiting for? If you want your building to be perfect and want to be satisfied, put your trust on us and fill up the form with complete description to inform us</p>
+                </div>
+
+                <!-- Next Project Form -->
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 md:mt-16">
+                    <input class="font-extrabold focus:ring-4 focus:ring-basic outline-none rounded-3xl py-4 md:py-3 ps-5" type="text" name="First" id="First" placeholder="First Name*" required>
+                    <input class="font-extrabold focus:ring-4 focus:ring-basic  outline-none rounded-3xl py-4 md:py-3 ps-5" type="text" name="Last" id="Last" placeholder="Last Name*" required>
+                    <input class="font-extrabold focus:ring-4 focus:ring-basic outline-none rounded-3xl py-4 md:py-3 ps-5" type="number" name="Phone" id="Phone" placeholder="Phone Number*" required>
+                    <input class="font-extrabold focus:ring-4 focus:ring-basic outline-none rounded-3xl py-4 md:py-3 ps-5" type="email" name="Email" id="Email" placeholder="Email Address*" required>
+                    <label class="md:col-span-2 outline-none" for="Message">
+                        <textarea class="font-extrabold focus:ring-4 focus:ring-basic outline-none resize-none rounded-3xl py-3 ps-5 col-span-2 w-full" rows="10" name="Message" id="Message" placeholder="Write your message here"></textarea>
+                    </label>
+                    <div class="text-center md:col-span-2 hover:bg-green-500 py-2 px-4 bg-basic text-xl font-extrabold rounded-full"><input type="submit" value="Send Email"> <i class="ml-2 bg-black text-white p-2 -rotate-45 rounded-full fa-solid fa-arrow-right"></i></div>
+                </form>
+            </div>
+        </section>
     </footer>
 </body>
 
